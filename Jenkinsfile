@@ -4,17 +4,17 @@ pipeline {
     stages {
 	      stage ('DEV') {
             steps {
-                  sh "Hi Sanjay its DEV STAGE"
+                  sh 'echo "Hi Sanjay its DEV STAGE"'
                 }
             }  
         stage('UAT') {
             steps {
-		              sh "Hi Sanjay its UAT STAGE"
+		              sh 'echo "Hi Sanjay its UAT STAGE"'
             }
         }
 	      stage('Approval Step'){
             steps{
-                  sh "Hi Sanjay its PROD STAGE"
+                  sh 'echo "Hi Sanjay its PROD STAGE"'
         }
      }
   }
